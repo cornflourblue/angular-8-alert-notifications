@@ -1,8 +1,8 @@
 ﻿import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 import { Subscription } from 'rxjs';
 
-import { Alert, AlertType } from '../_models';
-import { AlertService } from '../_services';
+import { Alert, AlertType } from './alert.model';
+import { AlertService } from './alert.service';
 
 @Component({ selector: 'alert', templateUrl: 'alert.component.html' })
 export class AlertComponent implements OnInit, OnDestroy {

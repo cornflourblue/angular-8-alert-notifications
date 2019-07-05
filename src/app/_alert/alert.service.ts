@@ -3,9 +3,9 @@ import { Router, NavigationStart } from '@angular/router';
 import { Observable, Subject } from 'rxjs';
 import { filter } from 'rxjs/operators';
 
-import { Alert, AlertType } from '../_models/alert';
+import { Alert, AlertType } from './alert.model';
 
-@Injectable()
+@Injectable({ providedIn: 'root' })
 export class AlertService {
     private subject = new Subject<Alert>();
     private keepAfterRouteChange = false;

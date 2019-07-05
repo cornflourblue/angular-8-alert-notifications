@@ -1,6 +1,6 @@
 ﻿import { Component, Input } from '@angular/core';
 
-import { AlertService } from '../_services';
+import { AlertService } from '../_alert';
 
 @Component({ selector: 'multi-alerts-section', templateUrl: 'multi-alerts-section.component.html' })
 export class MultiAlertsSectionComponent {
