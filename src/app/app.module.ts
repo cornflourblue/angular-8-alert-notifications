@@ -6,7 +6,7 @@ import { appRoutingModule } from './app.routing';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home';
-import { MultiAlertsComponent, MultiAlertsSectionComponent } from './multi-alerts';
+import { MultiAlertsComponent } from './multi-alerts';
 
 @NgModule({
     imports: [
@@ -17,8 +17,7 @@ import { MultiAlertsComponent, MultiAlertsSectionComponent } from './multi-alert
     declarations: [
         AppComponent,
         HomeComponent,
-        MultiAlertsComponent,
-        MultiAlertsSectionComponent
+        MultiAlertsComponent
     ],
     bootstrap: [AppComponent]
 })
