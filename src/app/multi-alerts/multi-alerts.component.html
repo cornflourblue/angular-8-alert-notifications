@@ -2,18 +2,18 @@
 <div class="row">
     <div class="col">
         <alert id="alert-1"></alert>
-        <button class="btn btn-success m-1" (click)="success('Success on the left!!', 'alert-1')">Success</button>
-        <button class="btn btn-danger m-1" (click)="error('Error on the left :(', 'alert-1')">Error</button>
-        <button class="btn btn-info m-1" (click)="info('Some info on the left....', 'alert-1')">Info</button>
-        <button class="btn btn-warning m-1" (click)="warn('Warning on the left: ...', 'alert-1')">Warn</button>
-        <button class="btn btn-default m-1" (click)="clear('alert-1')">Clear</button>
+        <button class="btn btn-success m-1" (click)="alertService.success('Success on the left!!', { id: 'alert-1' })">Success</button>
+        <button class="btn btn-danger m-1" (click)="alertService.error('Error on the left :(', { id: 'alert-1' })">Error</button>
+        <button class="btn btn-info m-1" (click)="alertService.info('Some info on the left....', { id: 'alert-1' })">Info</button>
+        <button class="btn btn-warning m-1" (click)="alertService.warn('Warning on the left: ...', { id: 'alert-1' })">Warn</button>
+        <button class="btn btn-outline-dark m-1" (click)="alertService.clear('alert-1')">Clear</button>
     </div>
     <div class="col">
         <alert id="alert-2"></alert>
-        <button class="btn btn-success m-1" (click)="success('Success on the right!!', 'alert-2')">Success</button>
-        <button class="btn btn-danger m-1" (click)="error('Error on the right :(', 'alert-2')">Error</button>
-        <button class="btn btn-info m-1" (click)="info('Some info on the right....', 'alert-2')">Info</button>
-        <button class="btn btn-warning m-1" (click)="warn('Warning on the right: ...', 'alert-2')">Warn</button>
-        <button class="btn btn-default m-1" (click)="clear('alert-2')">Clear</button>
+        <button class="btn btn-success m-1" (click)="alertService.success('Success on the right!!', { id: 'alert-2' })">Success</button>
+        <button class="btn btn-danger m-1" (click)="alertService.error('Error on the right :(', { id: 'alert-2' })">Error</button>
+        <button class="btn btn-info m-1" (click)="alertService.info('Some info on the right....', { id: 'alert-2' })">Info</button>
+        <button class="btn btn-warning m-1" (click)="alertService.warn('Warning on the right: ...', { id: 'alert-2' })">Warn</button>
+        <button class="btn btn-outline-dark m-1" (click)="alertService.clear('alert-2')">Clear</button>
     </div>
 </div>

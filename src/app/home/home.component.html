@@ -1,6 +1,16 @@
 ﻿<h1>Angular 8 Alerts</h1>
-<button class="btn btn-success m-1" (click)="success('Success!!')">Success</button>
-<button class="btn btn-danger m-1" (click)="error('Error :(')">Error</button>
-<button class="btn btn-info m-1" (click)="info('Some info....')">Info</button>
-<button class="btn btn-warning m-1" (click)="warn('Warning: ...')">Warn</button>
-<button class="btn btn-default m-1" (click)="clear()">Clear</button>
+<button class="btn btn-success m-1" (click)="alertService.success('Success!!', options)">Success</button>
+<button class="btn btn-danger m-1" (click)="alertService.error('Error :(', options)">Error</button>
+<button class="btn btn-info m-1" (click)="alertService.info('Some info....', options)">Info</button>
+<button class="btn btn-warning m-1" (click)="alertService.warn('Warning: ...', options)">Warn</button>
+<button class="btn btn-outline-dark m-1" (click)="alertService.clear()">Clear</button>
+<div class="form-group mt-2">
+    <div class="form-check">
+        <input type="checkbox" name="autoClose" id="autoClose" class="form-check-input" [(ngModel)]="options.autoClose">
+        <label for="autoClose">Auto close alert after three seconds</label>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" name="keepAfterRouteChange" id="keepAfterRouteChange" class="form-check-input" [(ngModel)]="options.keepAfterRouteChange">
+        <label for="keepAfterRouteChange">Keep displaying after one route change</label>
+    </div>
+</div>
